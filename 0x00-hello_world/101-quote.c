@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char myOutput="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
-	write(2,myOutput,59);
+	char out[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, out, 59);
 	return (1);
 }
