@@ -12,14 +12,16 @@ int main(void)
 	{
 		for (int2 = 0 ; int2 < 10 ; int2++)
 		{
-			putchar(int1 % 10 + '0');
-			putchar(int2 % 10 + '0');
-			if (int1 == 8 && int2 == 9)
+			if (int1 < int2 && int1 != int2)
 			{
-				continue;
+				putchar(int1 % 10 + '0');
+				putchar(int2 % 10 + '0');
+			if (int1 + int2 != 17)
+			{
+				putchar(',');
+				putchar(' ');
 			}
-			putchar(',');
-			putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
