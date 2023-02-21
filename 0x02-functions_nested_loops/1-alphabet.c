@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -7,19 +7,13 @@
  *
  * Return: Always 0 (Success)
  */
-char print_alphabet(char c)
+void print_alphabet(void)
 {
-	while (c <= 'z')
+	char i;
+
+	for (i = 'a' ; i <= 'z' ; i++)
 	{
-		putchar(c);
-		c++;
+		putchar(i);
 	}
 	putchar('\n');
-}
-int main(void)
-{
-	char c = 'a';
-
-	print_alphabet(c);
-	return (0);
 }
