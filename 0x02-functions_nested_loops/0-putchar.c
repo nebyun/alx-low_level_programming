@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main - Entry point
  *
@@ -6,9 +7,9 @@
  */
 int main(void)
 {
-	char ch[8] = {'_' , 'p' , 'u' , 't' , 'c' , 'h' , 'a' , 'r'};
+	char ch[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
-	for ( int i = 0 ; i <= 7 ; i++)
+	for (int i = 0 ; i <= 7 ; i++)
 	{
 		putchar(ch[i]);
 	}
