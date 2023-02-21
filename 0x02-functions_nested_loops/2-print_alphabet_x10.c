@@ -1,11 +1,8 @@
 #include "main.h"
 /**
- * start of a function - Entry point
- *
- * discription: It prints letter in lowercase ten times
- *
- * Ends with a new line
- *
+ * print_alphabet_x10 - check discription
+ * Discription: It prints letter in lowercase ten times
+ * Return: Nouting
  */
 void print_alphabet_x10(void)
 {
