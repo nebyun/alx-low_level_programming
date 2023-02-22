@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * times_table : check description
- * Description: display times table
+ * times_table - check description
+ * Description: prints miltiple up to 9 starting 0
  * Return:Nouting
  */
 void times_table(void)
 {
 	int i, j, n;
 
-	for (i = 0 ;i < 10 ; i++)
+	for (i = 0 ; i < 10 ; i++)
 	{
 		for (j = 0 ; j < 10 ; j++)
 		{
