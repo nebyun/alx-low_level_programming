@@ -2,7 +2,7 @@
 /**
  * _isdigit - check discription
  * @c: intiger value
- * Return: 1 if uppercase or 0 otherwise
+ * Return: 1 if c is digit or 0 otherwise
  */
 int _isdigit(int c)
 {
