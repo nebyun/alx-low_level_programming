@@ -12,17 +12,26 @@ int main(void)
 	f1 = 1;
 	f2 = 2;
 
-	for (i = 1 ; i < 50 ; i++)
+	for (i = 0 ; i < 50 ; i++)
 	{
-		sum = f1 + f2;
-		printf("%lu", sum);
-		f1 = f2;
-		f2 = sum;
-		if (i != 49)
+		if (i == 0)
 		{
+			printf("%ld", f1);
+		}
+		else if (i == 1)
+		{
+			printf("%ld", f2);
+		}
+		else
+		{
+			sum = f1 + f2;
+			printf("%lu", sum);
+			f1 = f2;
+			f2 = sum;
+			if (i == 49)
+				printf("\n");
+		}
 			printf(", ");
 		}
-		printf("\n");
-	}
 	return (0);
 }
