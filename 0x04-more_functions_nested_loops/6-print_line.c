@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * print_line - check 
- * @n : print _ n number of times
+ * print_line - check
+ * @n : print n number of times
  * Return: no return value
  */
 void print_line(int n)
 {
 	int i;
 
-	if(n > 0)
+	if (n > 0)
 	{
 		for (i = 0 ; i < n ; i++)
 		{
