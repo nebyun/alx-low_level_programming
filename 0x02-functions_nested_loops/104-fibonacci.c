@@ -16,12 +16,12 @@ int main(void)
 	{
 		if (i == 0)
 		{
-			printf("%ld", f1);
+			printf("%lu", f1);
 			printf(", ");
 		}
 		else if (i == 1)
 		{
-			printf("%ld", f2);
+			printf("%lu", f2);
 			printf(", ");
 		}
 		else
