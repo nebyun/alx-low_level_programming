@@ -6,23 +6,21 @@
  */
 int main(void)
 {
-	unsigned long f1, f2, sum;
-	float total;
+	int i = 0;
+	long f1 = 1, f2 = 2, sum = f2;
 
-	f1 = 0;
-	f2 = 1;
-
-	while (1)
+	while (f2 + f1 < 4000000)
 	{
-		sum = f1 + f2;
-		if (sum > 4000000)
-			break;
-		if ((f2 % 2) == 0)
-			total += sum;
+		f2 += f1;
 
-		f1 = f2;
-		f2 = sum;
+		if (f2 % 2 == 0)
+			sum += f2;
+
+		f1 = f2 - f1;
+
+		++i;
 	}
-	printf("%.0f\n", total);
+
+	printf("%ld\n", sum);
 	return (0);
 }
