@@ -17,10 +17,12 @@ int main(void)
 		if (i == 0)
 		{
 			printf("%ld", f1);
+			printf(", ");
 		}
 		else if (i == 1)
 		{
 			printf("%ld", f2);
+			printf(", ");
 		}
 		else
 		{
@@ -30,8 +32,9 @@ int main(void)
 			f2 = sum;
 			if (i == 49)
 				printf("\n");
+			else
+				printf(", ");
 		}
-			printf(", ");
-		}
+	}
 	return (0);
 }
