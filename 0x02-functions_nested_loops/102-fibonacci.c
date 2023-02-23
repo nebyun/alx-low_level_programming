@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main : Entry point
- * Description: display fibonachi upto 50
- * Return: to 0 (success)
+ * main - Entry point
+ * Description: print fibonacci numbers up to 50 starting with 1 and 2
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -20,8 +20,9 @@ int main(void)
 		f2 = sum;
 		if (i != 49)
 		{
-		printf(", ");
+			printf(", ");
 		}
 		printf("\n");
 	}
+	return (0);
 }
