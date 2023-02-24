@@ -7,7 +7,8 @@
 int main(void)
 {
 	int i;
-	unsigned long f1, f2, sum;
+	unsigned long f1, f2;
+	long double sum;
 
 	f1 = 1;
 	f2 = 2;
@@ -27,7 +28,7 @@ int main(void)
 		else
 		{
 			sum = f1 + f2;
-			printf("%lu", sum);
+			printf("%.Lf", sum);
 			f1 = f2;
 			f2 = sum;
 			if (i == 97)
