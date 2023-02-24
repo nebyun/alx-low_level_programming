@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define L 10000000000
 /**
  * main - Entry point
  * Description: print fibonacci numbers up to 98 starting with 1 and 2
@@ -6,36 +7,31 @@
  */
 int main(void)
 {
+	unsigned long int f1 = 0, b1 = 1, f2 = 0, b2 = 2;
+	unsigned long int h1, h2, h3;
 	int i;
-	unsigned long f1, f2;
-	long double sum;
 
-	f1 = 1;
-	f2 = 2;
-
-	for (i = 0 ; i < 98 ; i++)
+	printf("%lu, %lu, ", b1, b2);
+	for (i = 2; i < 98; i++)
 	{
-		if (i == 0)
+		if (b1 + b2 > L || f2 > 0 || f1 > 0)
 		{
-			printf("%ld", f1);
-			printf(", ");
-		}
-		else if (i == 1)
-		{
-			printf("%ld", f2);
-			printf(", ");
+			h1 = (b1 + b2) / L;
+			h2 = (b1 + b2) % L;
+			h3 = f1 + f2 + h1;
+			f1 = f2, f2 = h3;
+			b1 = b2, b2 = h2;
+			printf("%lu%010lu", f2, b2);
 		}
 		else
 		{
-			sum = f1 + f2;
-			printf("%.Lf", sum);
-			f1 = f2;
-			f2 = sum;
-			if (i == 97)
-				printf("\n");
-			else
-				printf(", ");
+			h2 = b1 + b2;
+			b1 = b2, b2 = h2;
+			printf("%lu", b2);
 		}
+		if (i != 97)
+			printf(", ");
 	}
+	printf("\n");
 	return (0);
 }
