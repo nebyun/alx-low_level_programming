@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * leet - function that change letter to number
+ * @str: variable for string
+ * Return: str
+ */
+char *leet(char *str)
+{
+	int a, b;
+	char *alpha = "aeotlAEOTL";
+	char *integer = "4307143071";
+
+	for (a = 0 ; str[a] != '\0' ; a++)
+	{
+		for (b = 0 ; alpha[b] != '\0' ; b++)
+		{
+			if (str[a] == alpha[b])
+				str[a] = integer[b];
+		}
+	}
+	return (str);
+}
