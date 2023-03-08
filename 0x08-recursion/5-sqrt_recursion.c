@@ -3,10 +3,9 @@
  * _sqrt_recursion - read discription
  * discription - function that returns the natural square
  * root of a number.
- * @n: intiger number.
+ * @n: intiger number
  * Return: square root of n
  */
-int _sqrt(int n, int x);
 int _sqrt_recursion(int n)
 {
 	if (n == 1 || n == 0)
