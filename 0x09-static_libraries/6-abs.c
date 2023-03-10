@@ -1,17 +1,17 @@
 #include "main.h"
 /**
  * _abs - check
- * @c: intiger number
+ * @n: intiger number
  * Return: absolute value of r
  */
-int _abs(int c)
+int _abs(int n)
 {
-	if (c >= 0)
+	if (n >= 0)
 	{
-		return (c);
+		return (n);
 	}
 	else
 	{
-		return (c * -1);
+		return (n * -1);
 	}
 }
