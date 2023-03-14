@@ -13,7 +13,9 @@ char *str_concat(char *s1, char *s2)
 	int index, c_index = 0, length;
 	char *concatinated;
 
-	if (s1 == 0 || s2 == 0)
+	if (s1 == 0)
+		return (" ");
+	if (s2 == 0)
 		return (" ");
 	for (index = 0; s1[index] || s2[index]; index++)
 		length++;
