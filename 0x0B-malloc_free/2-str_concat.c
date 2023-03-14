@@ -25,15 +25,13 @@ char *str_concat(char *s1, char *s2)
 	index = 0;
 	while (s1[index])
 	{
-		concatinated[c_index] = s1[index];
-		c_index++;
+		concatinated[c_index++] = s1[index];
 		index++;
 	}
 	index = 0;
 	while (s2[index])
 	{
-		concatinated[c_index] = s2[index];
-		c_index++;
+		concatinated[c_index++] = s2[index];
 		index++;
 	}
 	return (concatinated);
