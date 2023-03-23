@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * array_iterator - a function that search for an intiger
+ * array_iterator - a function that iterates through intiger
  * @array: array pointer
  * @size: size of array
  * @action: excuted function
